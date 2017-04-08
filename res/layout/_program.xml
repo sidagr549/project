@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/name_"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp"
+                android:background="#FFFFFF"
+                android:hint="Name of Program"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/general__description"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/name_"
+                android:layout_marginTop="30dp"
+                android:imeOptions="actionNext"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:hint="General Description"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:id="@+id/amount_required_123"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/general__description"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Amount Required     Rs."
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/amount_required"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/min_amount_required_123"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/amount_required_123"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Min Amount Required     Rs."
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/min_amount_required"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/min_amount_required_456"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/min_amount_required_123"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Max Amount Per Person   Rs."
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/max_amount_required_per_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@id/min_amount_required_456"
+                android:layout_marginTop="30dp"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#1E88E5"
+                android:onClick="startSocietyProgram"
+                android:text="start"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

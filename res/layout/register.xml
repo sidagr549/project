@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#1E88E5"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/front_page_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/user_username"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="USERNAME"
+                        android:inputType="text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/username_already_exists"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="22dp"
+                        android:layout_toEndOf="@id/user_username"
+                        android:text="username already exists... Try another"
+                        android:textColor="#D50000"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_name_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/this_field_is_required"
+                    android:textColor="#D50000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="E MAIL"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/email_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Not a valid E mail format"
+                    android:textColor="#D50000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/create_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pass_required"
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/min_8_characters"
+                        android:textColor="#D50000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/passwords_do_not_match"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:text="passwords did not match"
+                        android:textColor="#D50000"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="CONFIRM PASSWORD"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/front_page_two"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:background="#1E88E5"
+                android:onClick="signUp"
+                android:text="SIGN UP"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="16.5sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
