@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.siddhartha.fundcollector">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Fund Collector"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".Login">
+            <!--how to add the up button-->
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".Login"/>-->
+        </activity>
+        <activity android:name=".Chanda"
+            android:label="Fund Collector">
+        </activity>
+        <activity android:name=".NewProgram"
+            android:label="New Program"
+            android:parentActivityName=".Chanda">
+        </activity>
+        <activity android:name="._Program"
+            android:label="Program"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name=".NewInvestment"
+            android:label="New Investment"
+            android:parentActivityName=".Chanda">
+        </activity>
+        <activity android:name=".Approval">
+        </activity>
+        <activity android:name=".Pay"
+            android:label="Pay"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="._Investment_cum_Status">
+        </activity>
+        <activity android:name="._InvestmentOverview">
+        </activity>
+        <activity android:name=".YourPayments"
+            android:label="My Payments">
+        </activity>
+        <activity android:name=".StatusOverview"
+            android:label="Status Overview"
+            android:parentActivityName="._Investment_cum_Status">
+        </activity>
+    </application>
+
+</manifest>
