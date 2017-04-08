@@ -1,0 +1,5 @@
+society, govt, indi program -- up button
+after check status , my payments -- up button       1491683054
+when program is started after getting the code  --  back button should go to fund collector (after login page)
+after make payment page on clicking proceed to payment -- back button & up button to previous page
+after clicking ccheck 
